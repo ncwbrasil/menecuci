@@ -1,0 +1,87 @@
+@font-face {font-family: 'Trajan Pro Bold';font-style: normal;font-weight: normal;src: local('fonte/Trajan Pro Bold'), url('fonte/trajan pro bold.woff') format('woff');}
+@font-face {font-family: 'Trajan Pro Regular';font-style: normal;font-weight: normal;src: local('fonte/Trajan Pro Regular'), url('fonte/3842211708.woff') format('woff');}
+@font-face {font-family: 'cairobold';src: url('fonte/cairo-bold-webfont.woff2') format('woff2'),url('fonte/cairo-bold-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'cairoregular';src: url('fonte/cairo-regular-webfont.woff2') format('woff2'),url('fonte/cairo-regular-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+
+body {font-family: 'cairoregular'; font-size:16px; margin:0 auto; display:table; width:100%; line-height:25px; text-align:justify;}
+
+.topo 					{ width:100%; margin:0 auto; text-align:center; position:absolute; z-index:999;}
+.topo #topo 			{ width:980px; text-align:center; margin:0 auto; display:table;}
+.topo #topo #logo 		{ display:table; width:200px; height:185px; float:left; text-align:center; box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); }
+.topo #topo #logo img 	{ padding-top:25px;}
+.topo #topo .menu		{ width:70%; float:right; text-align:center; display:table;}
+@media screen and (max-width:980px){.topo #topo{ width:100%;}}
+@media screen and (max-width:710px){.topo #topo #logo { width:100px; height:93px;}.topo #topo #logo img{ width:90%; margin:0 auto;}}
+@media screen and (max-width:670px){.topo #topo .menu { width:50%; float:right;}}
+@media screen and (max-width:480px){.topo #topo #logo{ width:100%; margin:0 auto; text-align:center; box-shadow:none; } .topo #topo .menu{ width:100%;}.topo #topo #logo img{ width:100px; text-align:center;}.topo #topo{ background:#AE1C3A;}}
+
+/*PADRÃO*/
+.wrapper 	{ width:980px; margin:0 auto; display:table; text-align:justify;}
+.titulo		{ text-align:center; font-size:38px;  text-transform:uppercase; font-family:'Trajan Pro Regular';}
+.subtitulo	{ text-align:left; font-size:28px;  text-transform:uppercase; font-family:'Trajan Pro Regular';}
+.vinho 		{ color:#AE1C3A;}
+.destaque 	{ font-size:50px; font-family:'Trajan Pro Regular'; line-height:50px;}
+
+#bt-top			{ right:2%; position:fixed; top:87%; cursor:pointer; z-index:99999999; padding:20px; font-size:20px; line-height:35px;  font-weight:400; opacity: 0.50; filter: alpha(opacity=50); -webkit-transition-duration: 1s;-moz-transition-duration: 1s;transition-duration: 1s; display: none; font-family: 'Trajan Pro Regular'; width:60px; height:30px; background:#AE1C3A; color:#FFF;}
+#bt-top:hover		{ opacity: 0.90; filter: alpha(opacity=90); -webkit-transition-duration: 1s;-moz-transition-duration: 1s;transition-duration: 1s;}
+#bt-top .simbolo	{ font-size:14px; margin:0 0 0 20px}
+@media screen and (max-width:980px){ .wrapper{ width:100%;}}
+@media screen and (max-width: 480px) {#bt-top { padding:10px;}}
+
+/*APRESENTAÇÃO*/
+.apresentacao	 				{ width:100%; margin:0 auto; height:1000px; background:url(../imagens/back2.png) no-repeat; background-size:cover; position:relative; z-index:999}
+.apresentacao #apresentacao		{ width:525px; float:left; text-align:justify; display:table;}	
+.citacao						{ width:500px; padding:10px; height:423px; background:url(../imagens/back-comentario.png) no-repeat; background-size:100%; color:#FFF; text-align:center; margin-top:-780px; position:relative; z-index:99999; }
+.citacao .titulo				{font-size:30px; line-height:45px; padding-top:50px;}
+@media screen and (max-width:980px){.apresentacao #apresentacao{ width:95%; float: none; margin: 4% auto;} .citacao{ margin-left:5%;}}
+@media screen and (max-width:600px){ .citacao{ width:90%; float: none; margin: 0 auto; padding-top:40px; background-size:cover;margin-top:-750px; } }
+@media screen and (max-width:450px){ .citacao{ margin-top:-690px; } }
+@media screen and (max-width:400px){ .citacao .titulo{ padding-top: 10px;} }
+@media screen and (max-width:370px){ .citacao .titulo{font-size:30px; line-height:45px;}}
+
+/*EQUIPE*/
+.equipe 			{ width:100%; margin:0 auto; background:#AE1C3A; position: relative; z-index:-99; height:300px; margin-top:-460px }
+#equipe 			{  width:100%; margin:0 auto; background:url(../imagens/back3.png) no-repeat; background-size: cover; position:relative; z-index:9999; margin-top:-350px; height:700px;}
+#equipe .col1		{ width:100%; margin:0 auto; text-align:center; margin-top:180px; font-size:50px;}
+#equipe .col2		{ width:45%; float:left; margin:0 2.5%; text-align:justify; color:#FFF;}
+#equipe .subtitulo  {text-align: center;}
+@media screen and (max-width:980px){#equipe .col1, #equipe .col2 { width:95%; margin:0 auto; margin-left:2.5%;}#equipe .col1{margin-top:150px; text-align:center;} .col1 .equipe { height:auto;} #equipe{height:760px;}}
+@media screen and (max-width:600px){.equipe{ margin-top:-270px;}#equipe{height:800px;}}
+@media screen and (max-width:450px){.equipe{ margin-top:-200px;}#equipe{height:820px;}}
+@media screen and (max-width:360px){#equipe{height:900px;}}
+
+/*CONTATO*/
+.contato-home 						{ width:500px; float:right; display:table;}
+.contato-home #contato-home 		{ width:450px; float:right; color:#FFF; height:450px; background:url(../imagens/back-contato.png) no-repeat; background-size:cover; position: relative; z-index:9999; margin-top:-100px;}
+.contato-home #contato-home .bloco	{ width:90%; margin:0 auto; text-align:right; padding-top:40px; line-height:30px; font-size:20px;}
+.contato-home .clique 				{ width:300px; float:left; background:#000; color:#fff; text-align:center; margin-top:-50px; position:relative; z-index:999999;}
+.contato-home .clique a 			{ cursor:pointer; color:#FFF;}
+.mapa	{ position:relative; z-index:999; margin-top:-360px;}
+	
+@media screen and (max-width:980px){.contato-home #contato-home { margin-right:5%;}}
+@media screen and (max-width:710px){.contato-home #contato-home { margin-top:-55px;}.mapa { margin-top:-450px;}}
+@media screen and (max-width:500px){.contato-home { width:90%;}.contato-home #contato-home { width:100%; margin-top:-60px; display:table;}.contato-home #contato-home .bloco{ width:90%;}.mapa{ margin:0 auto;}}
+@media screen and (max-width:390px){.contato-home #contato-home .bloco {line-height:25px; font-size:16px;}.contato-home .clique { width:200px;}}
+
+input[type=text] 			{ width:85%; margin:0 auto; margin:5px 5%; margin-bottom:10px; padding:10px; border:1px solid #ccc; border-radius:8px; outline:none; }
+textarea			 		{ width:85%; height:185px;margin:0 auto; margin:5px 5%;  margin-bottom:10px; padding:10px; border:1px solid #ccc; border-radius:8px; outline:none;font-family: 'cairoregular';}
+input[type=button] 			{ height:45px; font-size:16px; margin:0 auto; border:none;font-family: 'Trajan Pro Regular'; outline:none;  padding:10px 45px; background:#000; color:#fff;font-weight:bold;  margin:5px 5%; cursor:pointer;  }
+input[type=button]:hover 	{background:#AE1C3A; font-weight:bold; color:#fff;}
+.but_mask					{ margin-left:20%;}	
+::-webkit-input-placeholder  {font-family: 'cairoregular'; sans-serif; font-size:16px; }		
+
+/* JANELA */
+.janela				{ font-family: 'cairoregular'; font-size:15px; font-weight:300; color:#FFF; width:90%; text-align:center; overflow:hidden; background-color:none; padding: 30px; border:none; position:fixed; text-align:center; top: 50%; left: 50%; right: 50%; z-index: 999999;}
+#mask 				{ display: none; background: #000;  position: fixed; left: 0; top: 0;  z-index:150; width: 100%; height: 100%; opacity: 0.8; z-index: 90;}
+.close_janela       {  position:absolute; right:0; top:0; font: 26px Calibri; cursor:pointer; _cursor:hand; color:#900;}
+.window				{ display:none; width:600px; height:400px; top:10%; position:fixed; left:0; background:#FFF; z-index:9900; padding:25px; border-radius:10px; }
+#mascara			{ display:none; position:absolute; left:0; top:0; z-index:9000; background-color:#000; }
+.fechar				{ display:block; text-align:right; color:#ef4e22;}
+
+/*RODAPE*/
+.rodape 			{ width:100%; background:#000; color:#fff;}
+.rodape #rodape 	{ margin:0 auto; padding-top:10px; width:980px; text-align:center; display:table; position:relative; z-index:999999}
+.rodape #rodape #mc { float:right; margin-top:-25px; }
+@media screen and (max-width:985px){.rodape #rodape {width:100%;}}
+@media screen and (max-width:520px){.rodape #rodape #mc {text-align:center; margin-top:20px; margin-right:45%;}}
+

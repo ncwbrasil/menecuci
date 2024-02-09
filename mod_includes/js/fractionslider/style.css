@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+/* SLIDER */
+.slider-wrapper{ position:absolute; overflow:hidden; width:100%; height:650px; background:none; border:none; }
+.slider{ position:relative; width:98%;  margin:0 auto; background:none; }
+@media only screen and (min-width: 1000px){ /*.slider{ width:1000px; }*/ }
+@media only screen and (min-width: 1440px){ /*.slider{ width:1440px; }*/ }
+
+/* ELEMENTOS */
+.verde	{ color:#8CC63F;font-weight:700;}
+.azul	{ color:#007DBA;font-weight:700;}
+
+.chamada	{ font:60px 'Oxygen'; line-height:60px; font-weight:700; letter-spacing:-2px; text-align:center; color:#007DBA; text-transform:uppercase; width:100%; display:table;}
+.subchamada	{ font:25px 'Oxygen'; line-height:25px; font-weight:400; text-align:center; color:#999; width:100%; }
+
+.chamada02	{ font:40px 'Oxygen'; line-height:40px; font-weight:400; letter-spacing:-2px; text-align:center; color:#999; width:100%; }

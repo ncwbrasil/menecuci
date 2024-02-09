@@ -1,0 +1,89 @@
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor:pointer;
+	display:table
+}
+.main ul li { margin-bottom:90px;}
+@media screen and(max-width:547px){}
+
+.ch-info-wrap{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+	top: 20px;
+	left: 20px;
+	background: #000;
+	box-shadow: 
+		0 0 0 20px rgba(255,255,255,0.47);
+
+}
+
+.ch-info{
+	position: absolute;
+	width: 184px;
+	height: 184px;
+	border-radius: 50%;
+	margin:0 auto; border:none; text-align:center;
+	top: -2px;
+	left: -2px;
+	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+		
+}
+
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.ch-img-1 { 
+	background-image: url(../imagens/1.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../imagens/2.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../imagens/3.jpg);
+}
+.ch-img-4 { 
+	background-image: url(../imagens/4.jpg);
+}
+.ch-img-5 { 
+	background-image: url(../imagens/5.jpg);
+}
+.ch-img-6 { 
+	background-image: url(../imagens/6.jpg);
+}
+
+a:hover .ch-info-wrap {
+	box-shadow: 
+		0 0 0 0 rgba(255,255,255,0.8), 
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+

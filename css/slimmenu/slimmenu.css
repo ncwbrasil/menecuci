@@ -1,0 +1,55 @@
+@font-face {font-family: 'Trajan Pro Bold';font-style: normal;font-weight: normal;src: local('../fonte/Trajan Pro Bold'), url('../fonte/trajan pro bold.woff') format('woff');}
+@font-face {font-family: 'cairobold';src: url('../fonte/cairo-bold-webfont.woff2') format('woff2'),url('../fonte/cairo-bold-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'cairoregular';src: url('../fonte/cairo-regular-webfont.woff2') format('woff2'),url('../fonte/cairo-regular-webfont.woff') format('woff');font-weight: normal;font-style: normal;}
+
+.menu-collapser	{ position:relative; width:100%; height:40px; color:#fff; font-size:16px; line-height:40px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+.collapse-button								{ position:absolute; right:8px; top:20px; padding:7px 10px; color:#fff; font-size:14px; text-align:center; border-radius:2px; cursor:pointer; transform:translate(0, -50%); -o-transform:translate(0, -50%); -ms-transform:translate(0, -50%); -moz-transform:translate(0, -50%); -webkit-transform:translate(0, -50%); box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.collapse-button:hover, .collapse-button:focus	{ color:#FFF;}
+.collapse-button .icon-bar						{ display:block;height:2px;width:25px;margin:2px 0;background-color:#fff;border-radius:1px}
+
+ul.slimmenu								{ width:100%;margin:0 0 0 0;padding:0;list-style-type:none; text-align:left;}
+ul.slimmenu:before,ul.slimmenu:after	{ content:'';display:table}
+ul.slimmenu:after						{ clear:both}
+
+ul.slimmenu.collapsed li				{ display:block;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; padding:0; margin:0 auto; border-top:1px solid rgba(0,0,0,0.075);}
+ul.slimmenu.collapsed li:hover			{ background:none; background:#fff;}
+ul.slimmenu.collapsed li>ul				{ position:static;display:none}
+ul.slimmenu.collapsed li a				{ display:block;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; text-align:left; padding-left:20px;}
+ul.slimmenu.collapsed li .sub-toggle	{ height:40px}
+
+ul.slimmenu.collapsed li > ul				{ width:100%; margin:0 auto;}
+ul.slimmenu.collapsed li > ul a				{ margin:0 auto; border:none; }
+ul.slimmenu.collapsed li > ul > li			{ width:100%; background:#B70D18;}
+ul.slimmenu.collapsed li > ul > li a		{ padding:11px 72px 10px 83px;}
+
+ul.slimmenu.collapsed li > ul > li ul		{ width:100%;}
+ul.slimmenu.collapsed li > ul > li ul li	{ width:100%; background:#E0E0E0;}
+ul.slimmenu.collapsed li > ul > li ul li a	{ padding:11px 72px 10px 93px;}
+
+ul.slimmenu.collapsed li a					{ color:#fff; text-align:center; padding:0; padding-top:10px; padding-bottom:10px;}
+ul.slimmenu.collapsed li:hover a 			{ text-decoration:none; color:#AE1C3A;}
+ul.slimmenu.collapsed li ul li a			{ color:#fff;}
+
+ul.slimmenu li				{ position:relative;float:left;display:inline-block; width:33%; text-align:center; margin-top:60px; margin-bottom:30px;}
+ul.slimmenu li a			{ display:block; font:18px 'Trajan Pro Bold'; padding:0 0 4px 0; text-align:center; color:#FFF;}
+ul.slimmenu li a:hover		{ border-bottom:1px solid #FFF;}
+
+@media screen and (max-width:985px){ul.slimmenu li.ultimo a	{ padding:0; padding-left:20px;}ul.slimmenu li.ultimo		{ margin-top:0;}}
+
+/*ul.slimmenu li ul				{ width:280px; margin:0; list-style-type:none; }
+ul.slimmenu li ul li			{ background:#B70D18; opacity: 0.9; width:100%; line-height:14px; color:#999; margin:0 auto; padding:0;}
+ul.slimmenu li ul li a			{ display:block; color:#fff; text-align:left; padding-left:20px;font-size:14px;font-weight:300;transition:background-color 0.5s ease-out;-o-transition:background-color 0.5s ease-out;-moz-transition:background-color 0.5s ease-out;-webkit-transition:background-color 0.5s ease-out; text-transform:none; padding-top:8px; padding-bottom:10px; border-bottom:none;}
+ul.slimmenu li ul li:hover		{ background:#B70D18;}
+ul.slimmenu li ul li:hover a	{ color:#FFF; font-weight:bold;}
+ul.slimmenu li ul li:hover 		{ opacity:1;}
+ul.slimmenu li>ul				{ position:absolute;left:0;top:100%;z-index:999;display:none;}
+
+ul.slimmenu li .sub-toggle			{ position:absolute;right:0;top:0;z-index:9;width:10px; margin-top:-17px; height:100%;text-align:center;cursor:pointer}
+ul.slimmenu li .sub-toggle:before	{ content:'';display:inline-block;height:100%; vertical-align:middle}
+ul.slimmenu li .sub-toggle>i		{ display:inline-block;color:#BBB;font-size:8px;vertical-align:middle}
+
+ul.slimmenu>li{ }
+ul.slimmenu>li:first-child,ul.slimmenu>li.has-submenu+li{ border-left:0}
+
+@media screen and (max-width:1050px){ul.slimmenu li.logo	{display:none;}ul.slimmenu li .sub-toggle{ width:30px; margin-top:15px;}ul.slimmenu li .sub-toggle:before	{margin-right:-0.25em;}}*/
